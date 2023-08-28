@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ℂ𝕒𝕚𝕕𝕒 𝕝𝕚𝕓𝕣𝕖</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="fondo">
+    <div class="main">
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="../movimiento_uniforme/movimento_uniforme.html">Movimiento uniforme</a>
+            <a href="../Movimiento_uniformemente_variado/Movimiento_uniformemente_variado.html">Movimiento uniforme variado</a>
+            <a href="../Caída_libre/Caída_libre.HTML">Caida libre</a>
+            <a href="../Tiro_parabolico/Tiro_parabolico.HTML">Tiro parabolico</a>
+            <a href="../Translacion/Translacion.html">Translacion</a>
+            <a href="../Rotacion/Rotacion.html">Rotación</a>
+            <a href="../VELOCIDAD_DE_UN_OBJETO_EN_EL_PLANO/VELOCIDAD_DE_UN_OBJETO_EN_EL_PLANO.html">VELOCIDAD DE UN OBJETO EN EL PLANO</a>
+            <a href="../MOVIMIENTO_EN_EL_PLANO(Posición)/MOVIMIENTO_EN_EL_PLANO(Posición).html">MOVIMIENTO EN EL PLANO(Posición)</a>
+            <a href="../MOVIMIENTO_EN_EL_PLANO(Velocidad)/MOVIMIENTO_EN_EL_PLANO(Velocidad).html">MOVIMIENTO EN EL PLANO(Velocidad)</a>
+            <a href="../Segunda_ley_de_Newton/Segunda_ley_de_Newton.html">Segunda ley de Newton</a>
+            <a href="../Ecuaciones_de_movimiento/Ecuaciones_de_movimiento.html">Ecuaciones de movimiento</a>
+            <a href="../Convertir_unidades/Convertir_unidades.html">Convertir unidades</a>
+            <a href="../Trabajo/Trabajo.html">Trabajo</a>
+            <a href="../Energía_cinética/Energía_cinética.html">Energía cinética Y Principio de trabajo y energia</a>
+            <a href="../Potencia/Potencia.html">Potencia</a>
+            <a href="../Energía_potencial/Energía_potencial.html">Energía potencial</a>
+            <a href="../Impulso/Impulso.html">Impulso</a>
+            <a href="../Cantidad_de_movimiento_para_una_particula/Cantidad_de_movimiento_para_una_particula.html">Cantidad de movimiento para una particula</a>
+            <a href="../Cantidad_de_movimiento_para_un_sistema_de_particulas/Cantidad_de_movimiento_para_un_sistema_de_particulas.html">Cantidad de movimiento para un sistema de particulas</a>
+            <a href="../Frecuencia_natural/Frecuencia_natural.html">Frecuencia natural</a>
+            <a href="../Amortiguacion_critica/Amortiguacion_critica.html">Amortiguacion critica</a>
+        </nav>
+        <div>
+            <h1>Caída libre</h1><br>
+            <p>La caída libre es un movimiento rectilíneo uniformemente acelerado en el que se deja caer un cuerpo<br>
+                verticalmente desde una altura determinada y no encuentra resistencia alguna en su camino. Las ecuaciones de<br>
+                la caída libre son:</p><br>
+            <h2>Formula de la posición final del cuerpo:</h2>
+            <img src="../assets/Captura de pantalla 2023-06-27 152544.png"><img/>
+                <fieldset>
+                    H <input type="number" id="h_1">
+                    t <input type="number" id="t_1">
+                    <button type="button" onclick="Formula_1(
+                        document.getElementById('h_1').value,
+                        document.getElementById('t_1').value)">Calcular</button>
+                        <div class="resultado" id="Formula_1"></div>
+                </fieldset>
+
+            <h2>Formula del Intervalo de tiempo durante el cual se produce el movimiento:</h2>
+            <img src="../assets/t_formula.png"><img/>
+                <fieldset>
+                    h <input type="number" id="h_2">
+                    <button type="button" onclick="Formula_2(
+                        document.getElementById('h_2').value)">Calcular</button>
+                        <div class="resultado" id="Formula_2"></div>
+                </fieldset>
+            
+            <h2>Formula de la velocidad final del cuerpo:</h2>
+            <img src="../assets/v_formula.png"><img/>
+                <fieldset>
+                    t <input type="number" id="t_3">
+                    <button type="button" onclick="Formula_3(
+                        document.getElementById('t_3').value)">Calcular</button>
+                        <div class="resultado" id="Formula_3"></div>
+                </fieldset>
+
+            <h2>Formula de la aceleración del cuerpo durante el movimiento:</h2>
+            <img src="../assets/a_formula.png"><img/>
+                <fieldset>
+                    <button type="button" onclick="Formula_4()">Calcular</button>
+                        <div class="resultado" id="Formula_4"></div>
+                </fieldset>
+            <script src="Caída_libre.js"></script>
+            <br>
+            <p> y = La posición final del cuerpo (m).<br>
+                v = La velocidad final del cuerpo (m/s).<br>
+                a = La aceleración del cuerpo durante el movimiento (m/s^2).<br>
+                t = Intervalo de tiempo durante el cual se produce el movimiento (s).<br>
+                H = La altura desde la que se deja caer el cuerpo (m)<br>
+                g = El valor de la aceleración de la gravedad (9. 8m/s )</p>
+        </div>
+    </div>
+    <div class = "footer">
+        <a href = "https://github.com/joseManuel263">
+            <img src = "../assets/github.png" width = "52" height = "50">
+        </a>
+        <a href = "https://www.youtube.com/channel/UCTF0NT5IRPtwpIHtXuROJag">
+            <img src = "../assets/youtube.png" width = "50" height = "50">
+        </a>
+        <a href = "https://www.instagram.com/hibi_i_nova/">
+            <img src = "../assets/insta.png" width = "50" height = "50">
+        </a>
+        <a href = "https://www.facebook.com/profile.php?id=100017575472113">
+            <img src = "../assets/fb.png" width = "50" height = "50">
+        </a>
+        <a href = "https://www.twitch.tv/hibi_i_nova">
+            <img src = "../assets/twitch.png" width = "58" height = "52">
+        </a>
+    </div>
+</body>
+</html>

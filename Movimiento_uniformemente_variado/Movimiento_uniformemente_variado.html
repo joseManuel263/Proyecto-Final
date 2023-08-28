@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝕄𝕠𝕧𝕚𝕞𝕚𝕖𝕟𝕥𝕠 𝕦𝕟𝕚𝕗𝕠𝕣𝕞𝕖𝕞𝕖𝕟𝕥𝕖 𝕧𝕒𝕣𝕚𝕒𝕕𝕠</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="fondo">
+    <div class="main">
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="../movimiento_uniforme/movimento_uniforme.html">Movimiento uniforme</a>
+            <a href="../Movimiento_uniformemente_variado/Movimiento_uniformemente_variado.html">Movimiento uniforme variado</a>
+            <a href="../Caída_libre/Caída_libre.HTML">Caida libre</a>
+            <a href="../Tiro_parabolico/Tiro_parabolico.HTML">Tiro parabolico</a>
+            <a href="../Translacion/Translacion.html">Translacion</a>
+            <a href="../Rotacion/Rotacion.html">Rotación</a>
+            <a href="../VELOCIDAD_DE_UN_OBJETO_EN_EL_PLANO/VELOCIDAD_DE_UN_OBJETO_EN_EL_PLANO.html">VELOCIDAD DE UN OBJETO EN EL PLANO</a>
+            <a href="../MOVIMIENTO_EN_EL_PLANO(Posición)/MOVIMIENTO_EN_EL_PLANO(Posición).html">MOVIMIENTO EN EL PLANO(Posición)</a>
+            <a href="../MOVIMIENTO_EN_EL_PLANO(Velocidad)/MOVIMIENTO_EN_EL_PLANO(Velocidad).html">MOVIMIENTO EN EL PLANO(Velocidad)</a>
+            <a href="../Segunda_ley_de_Newton/Segunda_ley_de_Newton.html">Segunda ley de Newton</a>
+            <a href="../Ecuaciones_de_movimiento/Ecuaciones_de_movimiento.html">Ecuaciones de movimiento</a>
+            <a href="../Convertir_unidades/Convertir_unidades.html">Convertir unidades</a>
+            <a href="../Trabajo/Trabajo.html">Trabajo</a>
+            <a href="../Energía_cinética/Energía_cinética.html">Energía cinética Y Principio de trabajo y energia</a>
+            <a href="../Potencia/Potencia.html">Potencia</a>
+            <a href="../Energía_potencial/Energía_potencial.html">Energía potencial</a>
+            <a href="../Impulso/Impulso.html">Impulso</a>
+            <a href="../Cantidad_de_movimiento_para_una_particula/Cantidad_de_movimiento_para_una_particula.html">Cantidad de movimiento para una particula</a>
+            <a href="../Cantidad_de_movimiento_para_un_sistema_de_particulas/Cantidad_de_movimiento_para_un_sistema_de_particulas.html">Cantidad de movimiento para un sistema de particulas</a>
+            <a href="../Frecuencia_natural/Frecuencia_natural.html">Frecuencia natural</a>
+            <a href="../Amortiguacion_critica/Amortiguacion_critica.html">Amortiguacion critica</a>
+        </nav>
+        <div>
+            <h1>Movimiento uniformemente variado</h1>
+
+            <p>El movimiento uniformemente variado (MUV) es un tipo de movimiento en el cual la aceleración de un objeto es constante y distinta de cero. A diferencia del movimiento uniforme en el cual la velocidad es constante, en el MUV la velocidad cambia de manera uniforme con el tiempo debido a la aceleración constante.
+
+                En el movimiento uniformemente variado, el objeto experimenta un cambio igual en su velocidad en intervalos de tiempo iguales. Esto implica que la velocidad aumenta o disminuye en una cantidad constante en cada unidad de tiempo.
+                
+                Las características clave del movimiento uniformemente variado son:
+                
+                Aceleración constante: La aceleración (a) del objeto se mantiene constante durante todo el movimiento. Puede ser positiva (aceleración) o negativa (desaceleración).
+                
+                Cambio uniforme de velocidad: La velocidad (v) del objeto cambia de manera uniforme a lo largo del tiempo debido a la aceleración constante. Esto significa que la velocidad aumenta o disminuye en la misma cantidad en intervalos de tiempo iguales.
+                
+                Trayectoria rectilínea: El objeto se mueve en una trayectoria rectilínea, es decir, en línea recta.</p>
+            
+            <h2>Formula de la velocidad final:</h2>
+            <p>Velocidad_final = velocidad_inicial + (aceleracion * Tiempo)</p>
+                <fieldset>
+                    Velocidad_inicial <input type="number" id="v_1">
+                    Aceleracion <input type="number" id="a_1">
+                    Tiempo <input type="number" id="t_1">
+                    <button type="button" onclick="velocidad_media(
+                        document.getElementById('v_1').value,
+                        document.getElementById('a_1').value,
+                        document.getElementById('t_1').value)">Calcular</button>
+                        <div class="resultado" id="velocidad_final"></div>
+                </fieldset>
+
+                <h2>Formula de la desplazamiento total:</h2>
+            <p>Desplazamiento total = velocidad_inicial * Tiempo + 1/2 Aceleracion * Tiempoˆ2</p>
+                <fieldset>
+                    Velocidad_inicial <input type="number" id="v_2">
+                    Aceleracion <input type="number" id="a_2">
+                    Tiempo <input type="number" id="t_2">
+                    <button type="button" onclick="desplazamiento_total('v_2','a_2','t_2')">Calcular</button>
+                        <div class="resultado" id="Desplazamiento_total"></div>
+                </fieldset>
+                
+            <script src="Movimiento_uniformemente_variado.js"></script>
+        </div>
+    </div>
+    <div class = "footer">
+        <a href = "https://github.com/joseManuel263">
+            <img src = "../assets/github.png" width = "52" height = "50">
+        </a>
+        <a href = "https://www.youtube.com/channel/UCTF0NT5IRPtwpIHtXuROJag">
+            <img src = "../assets/youtube.png" width = "50" height = "50">
+        </a>
+        <a href = "https://www.instagram.com/hibi_i_nova/">
+            <img src = "../assets/insta.png" width = "50" height = "50">
+        </a>
+        <a href = "https://www.facebook.com/profile.php?id=100017575472113">
+            <img src = "../assets/fb.png" width = "50" height = "50">
+        </a>
+        <a href = "https://www.twitch.tv/hibi_i_nova">
+            <img src = "../assets/twitch.png" width = "58" height = "52">
+        </a>
+    </div>
+</body>
+</html>

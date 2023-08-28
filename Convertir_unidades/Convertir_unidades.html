@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ℂ𝕠𝕟𝕧𝕖𝕣𝕥𝕚𝕣 𝕦𝕟𝕚𝕕𝕒𝕕𝕖𝕤</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="fondo">
+    <div class="main">
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="../movimiento_uniforme/movimento_uniforme.html">Movimiento uniforme</a>
+            <a href="../Movimiento_uniformemente_variado/Movimiento_uniformemente_variado.html">Movimiento uniforme variado</a>
+            <a href="../Caída_libre/Caída_libre.HTML">Caida libre</a>
+            <a href="../Tiro_parabolico/Tiro_parabolico.HTML">Tiro parabolico</a>
+            <a href="../Translacion/Translacion.html">Translacion</a>
+            <a href="../Rotacion/Rotacion.html">Rotación</a>
+            <a href="../VELOCIDAD_DE_UN_OBJETO_EN_EL_PLANO/VELOCIDAD_DE_UN_OBJETO_EN_EL_PLANO.html">VELOCIDAD DE UN OBJETO EN EL PLANO</a>
+            <a href="../MOVIMIENTO_EN_EL_PLANO(Posición)/MOVIMIENTO_EN_EL_PLANO(Posición).html">MOVIMIENTO EN EL PLANO(Posición)</a>
+            <a href="../MOVIMIENTO_EN_EL_PLANO(Velocidad)/MOVIMIENTO_EN_EL_PLANO(Velocidad).html">MOVIMIENTO EN EL PLANO(Velocidad)</a>
+            <a href="../Segunda_ley_de_Newton/Segunda_ley_de_Newton.html">Segunda ley de Newton</a>
+            <a href="../Ecuaciones_de_movimiento/Ecuaciones_de_movimiento.html">Ecuaciones de movimiento</a>
+            <a href="../Convertir_unidades/Convertir_unidades.html">Convertir unidades</a>
+            <a href="../Trabajo/Trabajo.html">Trabajo</a>
+            <a href="../Energía_cinética/Energía_cinética.html">Energía cinética Y Principio de trabajo y energia</a>
+            <a href="../Potencia/Potencia.html">Potencia</a>
+            <a href="../Energía_potencial/Energía_potencial.html">Energía potencial</a>
+            <a href="../Impulso/Impulso.html">Impulso</a>
+            <a href="../Cantidad_de_movimiento_para_una_particula/Cantidad_de_movimiento_para_una_particula.html">Cantidad de movimiento para una particula</a>
+            <a href="../Cantidad_de_movimiento_para_un_sistema_de_particulas/Cantidad_de_movimiento_para_un_sistema_de_particulas.html">Cantidad de movimiento para un sistema de particulas</a>
+            <a href="../Frecuencia_natural/Frecuencia_natural.html">Frecuencia natural</a>
+            <a href="../Amortiguacion_critica/Amortiguacion_critica.html">Amortiguacion critica</a>
+        </nav>
+        <di>
+        
+            <h1>Convertir unidades</h1>
+
+            <h2>Convertir unidades en dinámica implica cambiar las medidas de cantidades físicas de una unidad a otra, manteniendo el mismo valor numérico. Esto es una habilidad esencial en la física y la dinámica, ya que las cantidades pueden expresarse en diferentes sistemas de unidades y es necesario poder traducir entre ellos para hacer análisis y cálculos precisos.</h2>
+
+            <h2>Velocidad:</h2>
+        
+            <fieldset>
+                <label for="distancia">Distancia</label>
+                <input type="text" name="distancia" id="distancia">
+                <select name="distancia_unidad" id="distancia_unidad">
+                    <option value="km">Kilometros</option>
+                    <option value="mt">Metros</option>
+                    <option value="cm">Centimetros</option>
+                </select>
+            </fieldset><br>
+
+            <fieldset>
+                <input type="text" name="tiempo" id="tiempo">
+                <select name="tiempo_unidad" id="tiempo_unidad">
+                    <option value="hr">Hora</option>
+                    <option value="sg">Segundo</option>
+                    <option value="ms">Milisegundo</option>
+                </select>
+            </fieldset><br>
+
+            <fieldset>
+                <select name="distancia_unidad_res" id="distancia_unidad_res">
+                    <option value="km">Kilometros</option>
+                    <option value="mt">Metros</option>
+                    <option value="cm">Centimetros</option>
+                </select>
+                
+                <select name="tiempo_unidad_res" id="tiempo_unidad_res">
+                    <option value="hr">Hora</option>
+                    <option value="sg">Segundo</option>
+                    <option value="ms">Milisegundo</option>
+                </select><br><br>
+                <button class="boton" id="ro" type="button" onclick="velocidad('distancia', 'distancia_unidad', 'tiempo', 'tiempo_unidad', 'distancia_unidad_res', 'tiempo_unidad_res')">Calcular</button>
+            </fieldset><br>
+
+            <h2>Distancia:</h2>
+
+            <fieldset><label for="velocidad">Velocidad</label>
+                <input type="text" name="velocidad" id="velocidad_2">
+                <select name="velocidad_unidad_d" id="velocidad_unidad_d_2">
+                    <option value="km">Kilometros</option>
+                    <option value="mt">Metros</option>
+                    <option value="cm">Centimetros</option>
+                </select>
+            </fieldset><br>
+        
+            <fieldset><label for="tiempo">Tiempo</label>
+                <input type="text" name="tiempo" id="tiempo_2">
+                <select name="tiempo_unidad" id="tiempo_unidad_2">
+                    <option value="hr">Hora</option>
+                    <option value="sg">Segundo</option>
+                    <option value="ms">Milisegundo</option>
+                </select>
+            </fieldset><br>
+        
+            <fieldset>
+                <select name="velocidad_unidad_res" id="velocidad_unidad_res_2">
+                    <option value="km">Kilometros</option>
+                    <option value="mt">Metros</option>
+                    <option value="cm">Centimetros</option>
+                </select>
+                <select name="velocidad_unidad_t" id="velocidad_unidad_t_2">
+                    <option value="hr">Hora</option>
+                    <option value="sg">Segundo</option>
+                    <option value="ms">Milisegundo</option>
+                </select><br><br>
+                <button class="boton" id="ve" type="button" onclick="distancia('velocidad_2', 'velocidad_unidad_d_2', 'velocidad_unidad_t_2', 'tiempo_2', 'tiempo_unidad_2', 'velocidad_unidad_res_2')">Calcular</button>
+            </fieldset>
+
+            <h2>Tiempo:</h2>
+
+            <fieldset>
+                <label for="distancia">Distancia</label>
+                <input type="text" name="distancia" id="distancia_3">
+                <select name="distancia_unidad" id="distancia_unidad_3">
+                    <option value="km">Kilometros</option>
+                    <option value="mt">Metros</option>
+                    <option value="cm">Centimetros</option>
+                </select>
+            </fieldset><br>
+
+            <fieldset>
+                <label for="velocidad">Velocidad</label>
+                <input type="text" name="velocidad" id="velocidad_3">
+                <select name="velocidad_unidad_t" id="velocidad_unidad_t_3">
+                    <option value="hr">Hora</option>
+                    <option value="sg">Segundo</option>
+                    <option value="ms">Milisegundo</option>
+                </select>
+            </fieldset><br>
+
+            <fieldset>
+                <select name="velocidad_unidad_d" id="velocidad_unidad_d_3">
+                    <option value="km">Kilometros</option>
+                    <option value="mt">Metros</option>
+                    <option value="cm">Centimetros</option>
+                </select>
+                <label for="tiempo"></label>
+                <select name="tiempo_unidad" id="tiempo_unidad_3">
+                    <option value="hr">Hora</option>
+                    <option value="sg">Segundo</option>
+                    <option value="ms">Milisegundo</option>
+                </select><br><br>
+                <button class="boton" id="tm" type="button" onclick="tiempo('velocidad_3', 'velocidad_unidad_d_3', 'velocidad_unidad_t_3', 'distancia_3', 'distancia_unidad_3', 'tiempo_unidad_3')">Calcular</button>
+            </fieldset>
+
+            <script src="Convertir_unidades.js"></script>
+        </div>
+    </div>
+    <div class = "footer">
+        <a href = "https://github.com/joseManuel263">
+            <img src = "../assets/github.png" width = "52" height = "50">
+        </a>
+        <a href = "https://www.youtube.com/channel/UCTF0NT5IRPtwpIHtXuROJag">
+            <img src = "../assets/youtube.png" width = "50" height = "50">
+        </a>
+        <a href = "https://www.instagram.com/hibi_i_nova/">
+            <img src = "../assets/insta.png" width = "50" height = "50">
+        </a>
+        <a href = "https://www.facebook.com/profile.php?id=100017575472113">
+            <img src = "../assets/fb.png" width = "50" height = "50">
+        </a>
+        <a href = "https://www.twitch.tv/hibi_i_nova">
+            <img src = "../assets/twitch.png" width = "58" height = "52">
+        </a>
+    </div>
+</body>
+
+</html>

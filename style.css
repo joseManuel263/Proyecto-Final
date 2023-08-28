@@ -1,0 +1,123 @@
+@font-face {
+    font-family: letra1;
+    src: url('assets/TiltPrism-Regular-VariableFont_XROT\,YROT.ttf');
+}
+
+.header{
+    background-color: #435058;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    font-size: 0.8em;
+}
+
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #435058;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+body .main{
+    border-radius: 8px;
+    margin: 25px;
+    display: flex;
+}
+
+.fondo{
+    background: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v1016-c-08_1-ksh6mza3.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=f584d8501c27c5f649bc2cfce50705c0');
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+*{
+    font-family: letra1;
+}
+
+nav{
+    width: 250px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    padding: 8px;
+    max-height: 100vh;
+    overflow: scroll;
+}
+
+nav a{
+    text-decoration: none;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    &:hover{
+        color: red;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-appearance: none;
+    display: none !important;
+    background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+a {
+    color: white;
+
+}
+
+h1 ,h2, p, fieldset, div.resultado {
+    color: white;
+}
+
+fieldset {
+    border: 0;
+    border-radius: 15px;
+    background-color: #6aba9a;
+    box-shadow: 0px 20px 25px -20px rgb(255, 255, 255);
+}
+
+input{
+    background-color:silver;
+    border: 4px;
+    border-width: transparent;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+input:hover, input:focus-visible{
+    background-color:dodgerblue;
+    border-width: 20px;
+    border-color: black;
+    transition: 650ms;
+}
+
+input:focus-visible{
+    outline: 0;
+}
+
+button {
+    border: 0;
+    border-radius: 8px;
+    background-color: #baa96a;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0px 20px 25px -20px rgb(0, 0, 255);
+}
